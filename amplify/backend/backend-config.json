@@ -1,1 +1,26 @@
-{}
+{
+	"auth": {
+		"awsamplifypractice4bf356f6": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"awsamplifypractice": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authawsamplifypractice4bf356f6"
+						}
+					}
+				}
+			}
+		}
+	}
+}

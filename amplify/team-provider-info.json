@@ -10,6 +10,11 @@
             "StackName": "amplify-awsamplifypractice-dev-191913",
             "StackId": "arn:aws:cloudformation:us-east-1:327229172692:stack/amplify-awsamplifypractice-dev-191913/e4636e80-a979-11ea-9832-0ed5356bca17",
             "AmplifyAppId": "d3k8atyj37vyyn"
+        },
+        "categories": {
+            "auth": {
+                "awsamplifypractice4bf356f6": {}
+            }
         }
     }
 }

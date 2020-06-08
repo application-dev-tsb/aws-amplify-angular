@@ -16,4 +16,5 @@ ng e2e
 amplify init
 npm install aws-amplify @aws-amplify/ui-angular
 amplify add api
+amplify push
 ```

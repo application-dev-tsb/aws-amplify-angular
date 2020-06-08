@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "awsAmplifyPractice"
+    }
+  },
+  "defaultProject": "awsAmplifyPractice",
+  "cli": {
+    "analytics": "2ca01177-51cd-4d21-a679-c9bea283399d"
+  }
 }

@@ -9,6 +9,8 @@ import { APIService } from './API.service';
 export class AppComponent implements OnInit {
   todos: Array<any>;
 
+  constructor(private apiService: APIService) {}
+
   async ngOnInit() {
     this.apiService.ListTodos().then((evt) => {
       this.todos = evt.items;
@@ -19,8 +21,6 @@ export class AppComponent implements OnInit {
       this.todos = [...this.todos, data];
     });
   }
-
-  constructor(private apiService: APIService) {}
 
   createTodo() {
     this.apiService.CreateTodo({

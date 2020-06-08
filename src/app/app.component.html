@@ -1,5 +1,6 @@
-<button (click)="createTodo()">Add Todo</button>
-
-<ul>
-  <li *ngFor="let item of todos">{{item.name}} - {{item.description}}</li>
-</ul>
+<amplify-authenticator>
+  <button (click)="createTodo()">Add Todo</button>
+  <ul>
+    <li *ngFor="let item of todos">{{item.name}} - {{item.description}}</li>
+  </ul>
+</amplify-authenticator>
